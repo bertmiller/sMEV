@@ -1,5 +1,5 @@
 # sMEV
-** Warning: this code will not make you money. But by studying it you might learn how to capture MEV.**
+**Warning: this code will not make you money. But by studying it you might learn how to capture MEV.**
 
 This repo contains a searcher developed to take advantage of a 1 off MEV opportunity created by the Synthetix team deprecating their ETH collateral trial program. As a result of this there were many loans that would be liquidatable after the governance proposal was executed. Taking advantage of this required a bot that could backrun the governance proposal execution transaction from the mempool as well as monitoring and execution infrastructure - all of which is contained here.
 
