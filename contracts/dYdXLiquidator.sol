@@ -240,7 +240,7 @@ contract dYdXLiquidator {
         curvePoolSUSD.exchange_underlying(
             1, // usdc
             3, // sUSD
-            IERC20(usdcTokenAddress).balanceOf(address(this)), // 
+            usdcEstimate, // usdc input
             1); // min sUSD, generally not advisible to make a trade with a min amount out of 1, but its fine here I think because the overall risk of getting rekt is low
         
         // Liquidate the loans
